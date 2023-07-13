@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+.bullet {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    background-color: #FF6060;
+    border-radius: 10px;
+}

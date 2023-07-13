@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 209px;
+    background-color: black;
+}
+
+.footer__logo {
+    object-fit: none;
+    width: 122px;
+}
+
+.footer__text {
+    color: white;
+}

@@ -1,0 +1,21 @@
+@import "../../styles/utils/variables.scss";
+
+.property__card {
+    display: flex;
+    box-sizing: border-box;
+    background-size: cover;
+    height: 340px;
+    width: 340px;
+    padding-left: 20px;
+    background: linear-gradient(#FFFFFF, #000000);
+    background-color: $color-primary;
+    border-radius: 10px;
+}
+
+.property__title {
+    display: flex;
+    align-items: flex-end;
+    font-size: 18px;
+    color: #F6F6F6;
+
+}

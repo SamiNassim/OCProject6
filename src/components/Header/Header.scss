@@ -1,0 +1,25 @@
+.header__div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 57px;
+    color: #FF6060
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FF6060;
+    text-decoration: none;
+}
