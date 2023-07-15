@@ -1,0 +1,10 @@
+.rating {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.star__grey,
+.star__red {
+    width: 24px;
+    height: 24px;
+}

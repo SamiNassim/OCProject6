@@ -36,6 +36,7 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+    margin-bottom: 21px;
 }
 
 .host__img {
@@ -75,6 +76,6 @@
 
 .host__group {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     height: 64px;
 }

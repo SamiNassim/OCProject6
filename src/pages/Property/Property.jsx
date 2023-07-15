@@ -4,6 +4,7 @@ import "./Property.scss";
 import Tag from "../../components/Tag/Tag";
 import Collapse from "../../components/Collapse/Collapse";
 import Carousel from "../../components/Carousel/Carousel";
+import Rating from "../../components/Rating/Rating";
 
 function Property() {
 
@@ -43,14 +44,14 @@ function Property() {
                                 {propertyData.tags.map((property) => (<Tag tagname={property} />))}
                             </div>
                         </div>
-                        <div className="rating">
-
-                        </div>
                     </div>
                     <div className="host__group">
                         <div className="host__div">
                             <h2 className="host__name">{propertyData.host.name}</h2>
                             <img className="host__img" src={propertyData.host.picture} alt="Propriétaire" />
+                        </div>
+                        <div className="rating">
+                            <Rating rating={propertyData.rating} />
                         </div>
                     </div>
                 </div>
