@@ -40,10 +40,10 @@ export function Header() {
             <img src={logo} alt="Logo Kasa" />
             <nav>
                 <ul>
-                    <li id="home-link" >
+                    <li className="nav__list" id="home-link" >
                         <Link to="/">Accueil</Link>
                     </li>
-                    <li id="about-link">
+                    <li className="nav__list" id="about-link">
                         <Link to="/apropos">A propos</Link>
                     </li>
                 </ul>

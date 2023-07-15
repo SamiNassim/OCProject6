@@ -33,22 +33,22 @@ function Property() {
         return (
             <div className="property__div" >
                 <div className="carrousel"></div>
-                <div className="info__div">
-                    <div className="title__div">
-                        <h1 className="property__name">{propertyData.title}</h1>
-                        <h2 className="property__location">{propertyData.location}</h2>
-                        <div className="tags">
-                            {propertyData.tags.map((property) => (<Tag tagname={property} />))}
+                <div className="informations">
+                    <div className="info__div">
+                        <div className="title__div">
+                            <h1 className="property__name">{propertyData.title}</h1>
+                            <h2 className="property__location">{propertyData.location}</h2>
+                            <div className="tags">
+                                {propertyData.tags.map((property) => (<Tag tagname={property} />))}
+                            </div>
                         </div>
-                    </div>
-                    <div className="host__div">
+                        <div className="rating"></div>
+                    </div><div className="host__group">                    <div className="host__div">
                         <h2 className="host__name">{propertyData.host.name}</h2><img className="host__img" src={propertyData.host.picture} alt="Propriétaire" />
-                    </div>
-                    <div className="rating"></div>
-                </div>
+                    </div></div></div>
                 <div className="collapses">
-                    <Collapse title="Description" text={propertyData.description} id={id} />
-                    <Collapse title="Équipements" text={propertyData.equipments} id={id} />
+                    <Collapse title="Description" text={propertyData.description} id="desc" iddiv="desc-open" />
+                    <Collapse title="Équipements" text={propertyData.equipments.map(equipments => <li className="equipments">{equipments}</li>)} id="equip" iddiv="equip-open" />
                 </div>
 
 

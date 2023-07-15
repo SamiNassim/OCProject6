@@ -35,7 +35,6 @@
 .host__div {
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 10px;
 }
 
@@ -55,10 +54,27 @@
     font-size: 18px;
     margin: 0;
     font-weight: 500;
+    align-items: center;
 }
 
 .collapses {
     display: flex;
     flex-direction: row;
     gap: 76px;
+}
+
+.equipments {
+    list-style-type: none;
+}
+
+.informations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.host__group {
+    display: flex;
+    justify-content: flex-end;
+    height: 64px;
 }
