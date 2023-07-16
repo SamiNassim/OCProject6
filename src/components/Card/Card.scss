@@ -3,13 +3,19 @@
 .property__card {
     display: flex;
     box-sizing: border-box;
-    background-size: cover;
     height: 340px;
     width: 340px;
-    padding-left: 20px;
-    /*     background: linear-gradient(#FFFFFF, #000000); */
-    background-color: $color-primary;
     border-radius: 10px;
+}
+
+.shadow__box {
+    background: linear-gradient(#FFFFFF, #000000);
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 340px;
+    opacity: 0.5;
 }
 
 .property__title {
@@ -17,5 +23,20 @@
     align-items: flex-end;
     font-size: 18px;
     color: #F6F6F6;
+    position: relative;
+    left: 20px;
+    bottom: 410px;
+    width: 300px;
+}
 
+.property__cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card__link {
+    height: 340px;
+    width: 340px;
 }
