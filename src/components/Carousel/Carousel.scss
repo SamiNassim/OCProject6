@@ -1,6 +1,6 @@
 .carousel {
+    position: relative;
     height: 415px;
-    margin-bottom: 30px;
 }
 
 .carousel__div {
@@ -22,19 +22,19 @@
 
 .left__arrow {
     position: absolute;
-    top: 320px;
-    left: 124px;
+    top: 40%;
+    left: 20px;
 }
 
 .right__arrow {
     position: absolute;
-    top: 320px;
-    right: 124px;
+    top: 40%;
+    right: 20px;
 }
 
 .current__slide {
     position: absolute;
-    left: 727px;
-    top: 530px;
+    left: 48%;
+    bottom: 0;
     color: white;
 }

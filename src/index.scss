@@ -8,15 +8,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 // Act as a wrapper
 
 .header__div,
 .banner__div,
-.banner__div__about,
 .main__div,
 .property__div,
-.about__div {
+.about__div,
+.banner__shadow,
+.banner__wrapper {
   margin-left: 100px;
   margin-right: 100px;
 }

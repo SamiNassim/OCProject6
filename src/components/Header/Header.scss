@@ -12,14 +12,24 @@
     list-style-type: none;
     text-decoration: none;
     padding-left: 57px;
-    color: #FF6060
+    color: #FF6060;
 }
 
-a {
+.nav__list a {
+    color: #FF6060;
+    text-decoration: none;
+}
+
+a:active {
+    color: #FF6060;
     text-decoration: none;
 }
 
 a:visited {
     color: #FF6060;
     text-decoration: none;
+}
+
+.active {
+    text-decoration: underline;
 }

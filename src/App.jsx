@@ -2,6 +2,7 @@ import './App.scss';
 import Banner from './components/Banner/Banner';
 import Card from './components/Card/Card';
 import React, { useEffect, useState } from 'react';
+import bannerhome from "./assets/img/bannerbig.png";
 
 function App() {
 
@@ -19,12 +20,13 @@ function App() {
 
   return (
     <>
-      <Banner bgimg="banner__div" /><div className='main__div'>
+      <Banner bannerimg={bannerhome} /><div className='main__div'>
         {propertyData.map((property) => (
           <Card
             name={property.title}
             id={property.id}
             cover={property.cover}
+            key={property.id}
           />
         ))}
       </div>

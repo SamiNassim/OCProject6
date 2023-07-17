@@ -30,15 +30,27 @@ function Carousel({ slides }) {
 
     }
 
+    var styling = {
+        hidden: {
+            display: "unset"
+        }
+    };
+
+    if (slides.length === 1) {
+        styling.hidden = {
+            display: "none"
+        }
+    };
+
     return (
 
         <div className="carousel">
             <div className="carousel__div">
                 <img className="slide" src={slides[index]} alt="Aperçu de l'appartement" />
             </div>
-            <p className="current__slide">{index + 1} / {slides.length}</p>
-            <img onClick={prevSlide} className="left__arrow" id="prev-slide" src={arrowleft} alt="Précédente" />
-            <img onClick={nextSlide} className="right__arrow" id="next-slide" src={arrowright} alt="Suivante" />
+            <p className="current__slide" id="current-slide" style={styling.hidden}>{index + 1} / {slides.length}</p>
+            <img onClick={prevSlide} className="left__arrow" id="prev-slide" src={arrowleft} style={styling.hidden} alt="Précédente" />
+            <img onClick={nextSlide} className="right__arrow" id="next-slide" src={arrowright} style={styling.hidden} alt="Suivante" />
         </div>
     )
 }

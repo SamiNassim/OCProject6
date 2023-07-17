@@ -41,7 +41,7 @@ function Property() {
                             <h1 className="property__name">{propertyData.title}</h1>
                             <h2 className="property__location">{propertyData.location}</h2>
                             <div className="tags">
-                                {propertyData.tags.map((property) => (<Tag tagname={property} />))}
+                                {propertyData.tags.map((property, index) => (<Tag tagname={property} key={index} />))}
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ function Property() {
                 </div>
                 <div className="collapses">
                     <Collapse title="Description" text={propertyData.description} id="desc" iddiv="desc-open" />
-                    <Collapse title="Équipements" text={propertyData.equipments.map(equipments => <li className="equipments">{equipments}</li>)} id="equip" iddiv="equip-open" />
+                    <Collapse title="Équipements" text={propertyData.equipments.map((equipments, index) => <li className="equipments" key={index}>{equipments}</li>)} id="equip" iddiv="equip-open" />
                 </div>
             </div>
         )
