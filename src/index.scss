@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import "./styles/utils/variables.scss";
 
 body {
   box-sizing: border-box;
@@ -19,6 +20,11 @@ body {
 .banner__wrapper {
   margin-left: 100px;
   margin-right: 100px;
+
+  @include media-query($tablet-width) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 // ^^^^^^^^^^^^^^^^^^^

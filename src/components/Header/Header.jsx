@@ -10,7 +10,7 @@ export function Header() {
 
     return (
         <header className="header__div">
-            <img src={logo} alt="Logo Kasa" />
+            <img className="header__logo" src={logo} alt="Logo Kasa" />
             <nav>
                 <ul>
                     <li className={`nav__list ${location.pathname === '/' && "active"}`} id="home-link" >

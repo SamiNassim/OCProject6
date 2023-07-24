@@ -50,9 +50,7 @@ function Property() {
                             <h2 className="host__name">{propertyData.host.name}</h2>
                             <img className="host__img" src={propertyData.host.picture} alt="Propriétaire" />
                         </div>
-                        <div className="rating">
-                            <Rating rating={propertyData.rating} />
-                        </div>
+                        <Rating rating={propertyData.rating} />
                     </div>
                 </div>
                 <div className="collapses">

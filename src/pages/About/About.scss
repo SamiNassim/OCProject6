@@ -1,3 +1,5 @@
+@import "../../styles/utils/variables.scss";
+
 .about__div {
     display: flex;
     flex-direction: column;
@@ -6,4 +8,10 @@
     margin-top: 38px;
     gap: 30px;
     margin-bottom: 38px;
+}
+
+.banner__about__mobile {
+    @include media-query($tablet-width) {
+        height: 223px;
+    }
 }

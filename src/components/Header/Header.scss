@@ -1,3 +1,5 @@
+@import "../../styles/utils/variables.scss";
+
 .header__div {
     display: flex;
     flex-direction: row;
@@ -12,24 +14,36 @@
     list-style-type: none;
     text-decoration: none;
     padding-left: 57px;
-    color: #FF6060;
+    color: $color-primary;
+
+    @include media-query($tablet-width) {
+        text-transform: uppercase;
+        padding-left: 15px;
+        font-size: 15px;
+    }
+
 }
 
 .nav__list a {
-    color: #FF6060;
+    color: $color-primary;
     text-decoration: none;
 }
 
 a:active {
-    color: #FF6060;
+    color: $color-primary;
     text-decoration: none;
 }
 
 a:visited {
-    color: #FF6060;
+    color: $color-primary;
     text-decoration: none;
 }
 
 .active {
     text-decoration: underline;
+}
+
+.header__logo {
+    width: 30%;
+    max-width: 211px;
 }

@@ -1,7 +1,9 @@
+@import "../../styles/utils/variables.scss";
+
 .property__div {
     display: flex;
     flex-direction: column;
-    color: #FF6060;
+    color: $color-primary;
     margin-bottom: 50px;
 }
 
@@ -10,6 +12,10 @@
 .property__name {
     font-size: 36px;
     margin: 0;
+
+    @include media-query($tablet-width) {
+        font-size: 18px;
+    }
 }
 
 .property__location {
@@ -21,6 +27,7 @@
 
 .tags {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 10px;
 }
@@ -37,6 +44,10 @@
     flex-direction: row;
     gap: 10px;
     margin-bottom: 21px;
+
+    @include media-query($tablet-width) {
+        margin-bottom: 0;
+    }
 }
 
 .host__img {
@@ -56,12 +67,20 @@
     margin: 0;
     font-weight: 500;
     align-items: center;
+
+    @include media-query($tablet-width) {
+        font-size: 14px;
+    }
 }
 
 .collapses {
     display: flex;
     flex-direction: row;
     gap: 76px;
+
+    @include media-query($tablet-width) {
+        flex-direction: column;
+    }
 }
 
 .equipments {
@@ -73,10 +92,21 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 30px;
+
+    @include media-query($tablet-width) {
+        flex-direction: column;
+    }
 }
 
 .host__group {
     display: flex;
     flex-direction: column;
     height: 64px;
+
+    @include media-query($tablet-width) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
 }

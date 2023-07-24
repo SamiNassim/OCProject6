@@ -6,6 +6,10 @@
     height: 340px;
     width: 340px;
     border-radius: 10px;
+
+    @include media-query($tablet-width) {
+        width: 100%
+    }
 }
 
 .shadow__box {
@@ -16,6 +20,10 @@
     position: relative;
     bottom: 340px;
     opacity: 0.5;
+
+    @include media-query($tablet-width) {
+        width: 100%
+    }
 }
 
 .property__title {
@@ -43,4 +51,8 @@
 .card__link {
     height: 340px;
     width: 340px;
+
+    @include media-query($tablet-width) {
+        width: 100%
+    }
 }

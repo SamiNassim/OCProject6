@@ -1,4 +1,6 @@
-.banner__div {
+@import "../../styles/utils/variables.scss";
+
+/* .banner__div {
 
     display: flex;
     align-items: center;
@@ -6,7 +8,11 @@
     height: 223px;
     border-radius: 25px;
 
-}
+    @include media-query($tablet-width) {
+        height: 111px;
+    }
+
+} */
 
 .banner__text {
     display: flex;
@@ -18,6 +24,10 @@
     font-size: 48px;
     position: absolute;
 
+    @include media-query($tablet-width) {
+        margin-left: 16px;
+        font-size: 24px;
+    }
 }
 
 .banner__img {
@@ -37,6 +47,13 @@
     opacity: 0.3;
     position: absolute;
     top: 0;
+}
+
+.banner__img,
+.banner__shadow {
+    @include media-query($tablet-width) {
+        height: 111px;
+    }
 }
 
 .banner__wrapper {

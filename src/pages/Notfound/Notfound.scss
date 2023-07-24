@@ -1,20 +1,32 @@
+@import "../../styles/utils/variables.scss";
+
 .notfound {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #FF6060;
+    color: $color-primary;
 }
 
 .fourofour {
     font-size: 288px;
     padding: 0;
     margin: 0;
+
+    @include media-query($tablet-width) {
+        font-size: 96px;
+        margin-bottom: 113px;
+    }
 }
 
 .subtext {
     font-size: 36px;
     padding: 0;
     margin: 0;
+
+    @include media-query($tablet-width) {
+        font-size: 18px;
+        margin-bottom: 11px;
+    }
 }
 
 .homelink {

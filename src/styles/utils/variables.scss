@@ -1,1 +1,10 @@
 $color-primary: #FF6060;
+
+@mixin media-query($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+$mobile-width: 320px;
+$tablet-width: 768px;

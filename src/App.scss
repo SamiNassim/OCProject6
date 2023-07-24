@@ -1,3 +1,5 @@
+@import "./styles/utils/variables.scss";
+
 .main__div {
   display: flex;
   flex-wrap: wrap;
@@ -10,4 +12,11 @@
   padding-bottom: 43px;
   background-color: #F6F6F6;
   border-radius: 25px;
+
+  @include media-query($tablet-width) {
+    padding: 0;
+    gap: 20px;
+    background-color: unset;
+    border-radius: unset;
+  }
 }
