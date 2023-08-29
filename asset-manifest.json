@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/OCProject6/static/css/main.fb225c76.css",
-    "main.js": "/OCProject6/static/js/main.fcc1eb94.js",
-    "static/media/bannerbig.png": "/OCProject6/static/media/bannerbig.e76961bbfb39d9c6c040.png",
-    "static/media/bannerabout.png": "/OCProject6/static/media/bannerabout.a01d5f84a6d5e4975fdf.png",
-    "index.html": "/OCProject6/index.html",
-    "main.fb225c76.css.map": "/OCProject6/static/css/main.fb225c76.css.map",
-    "main.fcc1eb94.js.map": "/OCProject6/static/js/main.fcc1eb94.js.map"
+    "main.css": "/static/css/main.fb225c76.css",
+    "main.js": "/static/js/main.340a79b0.js",
+    "static/media/bannerbig.png": "/static/media/bannerbig.e76961bbfb39d9c6c040.png",
+    "static/media/bannerabout.png": "/static/media/bannerabout.a01d5f84a6d5e4975fdf.png",
+    "index.html": "/index.html",
+    "main.fb225c76.css.map": "/static/css/main.fb225c76.css.map",
+    "main.340a79b0.js.map": "/static/js/main.340a79b0.js.map"
   },
   "entrypoints": [
     "static/css/main.fb225c76.css",
-    "static/js/main.fcc1eb94.js"
+    "static/js/main.340a79b0.js"
   ]
 }
