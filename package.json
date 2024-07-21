@@ -1,7 +1,6 @@
 {
   "name": "kasa",
   "version": "0.1.0",
-  "homepage": "https://saminassim.github.io/OCProject6",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.22.7",
